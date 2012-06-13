@@ -19,4 +19,10 @@ describe Teacher do
       subject.record_grade(student, 95)
     end
   end
+  
+  describe "should see average grade" do
+    it "should average student grades" do
+	  student = stub
+	  assignment = mock
+	  assignment.should_average(:grade=).with
 end
